@@ -1,0 +1,17 @@
+{"scenario": "mv7-text-shell", "models": ["mv7"]}
+{"key": "Down"}
+{"key": "Down"}
+{"key": "Right"}
+{"expect": {"text_sent": "inputGain 25.5", "state": {"gain_tenths": 255}, "status": "Gain → 25.5 dB", "status_is_error": false}}
+{"key": "Up"}
+{"key": "Enter"}
+{"expect": {"text_sent": "micMute on", "state": {"muted": true}}}
+{"click_on": "Presets"}
+{"key": "s"}
+{"key": "Down"}
+{"key": "Enter"}
+{"expect": {"text_sent": "inputGain 25.5", "status": "Loaded", "status_is_error": false}}
+{"click_on": "Main"}
+{"click_on": "Mode:"}
+{"key": "Enter"}
+{"expect": {"text_sent": "dspMode 02", "state": {"mode": "Auto"}, "status": "Mode → Auto Level", "status_is_error": false}}
